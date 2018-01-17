@@ -16,14 +16,33 @@ mkdir hello-polymer
 cd hello-polymer
 </pre>
 
-`bower`をインストールする:
+npmプロジェクトとして初期化:
 <pre>
-npm install bower
+npm init
 </pre>
 
-`bower`でPolymer-Elementsのうち今回使用するものをinstallする:
+`bower`をインストールする:
 <pre>
- bower install PolymerElements/iron-list
- bower install PolymerElements/iron-input
- bower install PolymerElements/iron-autogrow-textarea
+npm install --save-dev bower
+</pre>
+
+bowerプロジェクトとして初期化:
+<pre>
+bower init
+</pre>
+
+`bower`でPolymer-Elementsのうち今回使用するものをインストールする:
+<pre>
+ bower install --save PolymerElements/iron-list
+ bower install --save PolymerElements/iron-input
+ bower install --save PolymerElements/iron-autogrow-textarea
+</pre>
+
+## 補足: `git clone` からの復元
+
+本リポジトリを `git clone` して取得した場合は、 `npm` がインストールされている状態で次のコマンドを実行すれば必要なモジュールが取得できる(つまり、前節のセットアップを行った状態が復元できる):
+<pre>
+cd hello-polymer
+npm install
+bower install
 </pre>
