@@ -6,6 +6,8 @@ GWTでPolymer Elementsを使用するための習作。
 
 ## セットアップ
 
+参考: https://www.polymer-project.org/2.0/start/install-2-0#use-bower
+
 `npm`は既にインストールしているものとする。
 (注1: `npm`は[Node.js](https://nodejs.org/ja/download/)をインストールすれば付いてくる)
 (注2: 今回Node.jsはオフィシャルサイトに書かれた手順でなく[nvm](https://github.com/creationix/nvm)を用いてインストールした)
