@@ -18,6 +18,7 @@
   "dependencies": {
     "iron-list": "PolymerElements/iron-list#^2.0.12",
     "iron-input": "PolymerElements/iron-input#^2.0.1",
-    "iron-autogrow-textarea": "PolymerElements/iron-autogrow-textarea#^2.1.0"
+    "iron-autogrow-textarea": "PolymerElements/iron-autogrow-textarea#^2.1.0",
+    "iron-selector": "PolymerElements/iron-selector#^2.0.1"
   }
 }
