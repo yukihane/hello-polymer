@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "iron-list": "PolymerElements/iron-list#^2.0.12"
+    "iron-list": "PolymerElements/iron-list#^2.0.12",
+    "iron-input": "PolymerElements/iron-input#^2.0.1"
   }
 }
