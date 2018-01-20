@@ -1,0 +1,62 @@
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+<link rel="import" href="bower_components/polymer/lib/elements/dom-repeat.html">
+<link rel="import" href="table-row-student.html">
+
+<dom-module id="table-student">
+
+  <template>
+
+    <style>
+    </style>
+
+    <!-- shadow DOM goes here -->
+    <div>
+      <table>
+        <tr><th>名前</th><th>身長</th><th>クラス</th></tr>
+        <template is="dom-repeat" items="{{students}}">
+          <table-row-student
+            student-name="{{item.name}}"
+            student-height="{{item.height}}"
+            student-room="{{item.room}}"></table-row-student>
+        </template>
+      </table>
+    </div>
+    <div>
+      <button type="button" on-click="addRow">追加</button>
+      <button type="button" on-click="sendToServer">送信</button>
+    </div>
+  </template>
+
+  <script>
+    class TableStudent extends Polymer.Element {
+      static get is() {
+        return 'table-student';
+      }
+      static get properties() {
+        return {
+          students: {
+            type: Array,
+            value: function() {
+              return [{name:"初期 太郎", height: "170", room:"A組"}];
+            }
+          }
+        }
+      }
+      constructor() {
+        super();
+      }
+      addRow(e) {
+        console.log("addRow");
+        this.push('students', {name:"", height: "", room:""});
+      }
+      sendToServer(e){
+        console.log("sendToServer");
+        for(let s of this.students) {
+          console.log(s.name);
+        }
+      }
+    }
+    customElements.define(TableStudent.is, TableStudent);
+  </script>
+
+</dom-module>
