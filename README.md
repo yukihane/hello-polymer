@@ -46,3 +46,10 @@ cd hello-polymer
 npm install
 bower install
 </pre>
+
+# 実行
+
+`npm`で`http-server`をインストールしているので次のコマンドで実行可能:
+<pre>
+http-server -o
+</pre>
