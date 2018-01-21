@@ -33,7 +33,7 @@ bowerプロジェクトとして初期化:
 bower init
 </pre>
 
-`bower`でPolymer-Elementsのうち今回使用するものをインストールする:
+`bower`でPolymer-Elementsのうち今回使用するものをインストールする(注: 結局今回は使わないことにしたので実際には全て不要):
 <pre>
  bower install --save PolymerElements/iron-list
  bower install --save PolymerElements/iron-input
