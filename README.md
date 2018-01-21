@@ -33,11 +33,9 @@ bowerプロジェクトとして初期化:
 bower init
 </pre>
 
-`bower`でPolymer-Elementsのうち今回使用するものをインストールする(注: 結局今回は使わないことにしたので実際には全て不要):
+Polymerインストール:
 <pre>
- bower install --save PolymerElements/iron-list
- bower install --save PolymerElements/iron-input
- bower install --save PolymerElements/iron-autogrow-textarea
+bower install --save Polymer/polymer#^2.3.1
 </pre>
 
 ## 補足: `git clone` からの復元
